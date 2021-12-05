@@ -1,22 +1,23 @@
 <template>
-  <div class="vp-sidebar"> <!--originally called sidebar but that conflicts with ReST -->
-    <slot></slot>
-    <!-- <slot name="top"/> -->
-    <!-- <ul class="sidebar-links" v-if="items.length"> -->
-    <!--   <li v-for="(item, i) in items" :key="i"> -->
-    <!--     <SidebarGroup -->
-    <!--       v-if="item.type === 'group'" -->
-    <!--       :item="item" -->
-    <!--       :first="i === 0" -->
-    <!--       :open="i === openGroupIndex" -->
-    <!--       :collapsable="item.collapsable" -->
-    <!--       @toggle="toggleGroup(i)" -->
-    <!--     /> -->
-    <!--     <SidebarLink v-else :item="item"/> -->
-    <!--   </li> -->
-    <!-- </ul> -->
-    <!-- <slot name="bottom"/> -->
-  </div>
+    <div class="vp-sidebar">
+        <!--originally called sidebar but that conflicts with ReST -->
+        <slot></slot>
+        <!-- <slot name="top"/> -->
+        <!-- <ul class="sidebar-links" v-if="items.length"> -->
+        <!--   <li v-for="(item, i) in items" :key="i"> -->
+        <!--     <SidebarGroup -->
+        <!--       v-if="item.type === 'group'" -->
+        <!--       :item="item" -->
+        <!--       :first="i === 0" -->
+        <!--       :open="i === openGroupIndex" -->
+        <!--       :collapsable="item.collapsable" -->
+        <!--       @toggle="toggleGroup(i)" -->
+        <!--     /> -->
+        <!--     <SidebarLink v-else :item="item"/> -->
+        <!--   </li> -->
+        <!-- </ul> -->
+        <!-- <slot name="bottom"/> -->
+    </div>
 </template>
 
 <script>
@@ -25,7 +26,7 @@
 //import { isActive } from './vuepress/util'
 
 export default {
-  /*
+    /*
   components: { SidebarGroup, SidebarLink },
 
   props: ['items'],
@@ -76,7 +77,7 @@ function resolveOpenGroupIndex (route, items) {
   }
   return -1
 */
-}
+};
 </script>
 
 <style lang="stylus">
@@ -100,12 +101,6 @@ function resolveOpenGroupIndex (route, items) {
       line-height 1.25rem
       font-size 1.1em
       padding 0.5rem 0 0.5rem 1.5rem
-  .searchbox
-    font-weight 600
-    font-size 1.1em
-    line-height 1.5rem
-    padding 1rem 0 1.5rem 0.75rem
-    border-bottom 1px solid $borderColor
   .sidebar-links
     padding 1.5rem 0
 
